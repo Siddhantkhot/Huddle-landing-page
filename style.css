@@ -1,0 +1,144 @@
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: "Poppins","Open Sans",sans-serif;
+    font-size:15px;
+}
+body{
+    background-color:var(--Violet);
+    display:flex;
+    min-height:100vh;
+    justify-content:center;
+    
+}
+.container{    
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    max-width:375px;
+    padding: 2rem;
+}
+.huddle-logo{
+    max-width:35%;
+}
+.mockup-img{
+    max-width:100%;
+    margin-top:4rem;
+}
+.huddle-des h1{
+    font-size:1.62rem;
+    text-align: center;
+    color:#ffffff;
+    margin-top:2.5rem;
+    font-weight:500;
+}
+.huddle-des p{
+    font-size:1.023rem;
+    text-align: center;
+    color:#ffffff;
+    margin-top:1rem;
+    font-weight:300;
+}
+button{
+    width:60%;  
+    padding: 0.7rem;
+    border-radius:1.5rem;
+    border: none;
+    font-size: 0.8rem;
+    color: var(--Violet);
+    font-weight:200;
+    margin-left:4rem;
+    margin-top:1.5rem;
+}
+button:hover{
+    color:rgb(171, 21, 126);
+}
+footer{
+    text-align: center;
+    margin-top:4rem;
+}
+footer :first-child{
+    width:1rem;
+    padding:0.2rem;
+    border:1.5px solid #fff;
+    border-radius:50%;
+    margin-right:0.3rem;
+}
+footer :nth-child(2){
+    width:1rem;
+    padding:0.2rem;
+    border:1.5px solid #fff;
+    border-radius: 50%;
+    margin-right:0.3rem;
+}
+footer :last-child{
+    width:1rem;
+    padding:0.23rem;
+    border:1.5px solid #fff;
+    border-radius: 50%;
+}
+@media only screen and (min-width:750px) {
+    body{
+        background-image:url(./images/bg-desktop.svg);
+        background-position:inherit;
+        background-size:80%;
+        background-repeat: no-repeat;
+        background-color:var(--Violet);
+        position: relative;
+    }
+    header{
+        position:absolute;
+        left:4rem;
+        top: 4rem;
+    }
+    .huddle-logo{
+        min-width:60%;
+    }
+    .huddle-img{
+        position: absolute;
+        width:45%;
+        left:4rem;
+        margin-top:5rem;
+    }
+    .container{
+        background-image:none;   
+    }
+    .huddle-des{
+        position: absolute;
+        padding:4rem;
+        top: 8rem;
+    }
+    .huddle-des h1{
+        font-size:2.5rem;
+        padding-right:7rem;
+        text-align: left;
+    }
+    .huddle-des p{
+        font-size:1.3rem;
+        text-align: left;
+        font-weight:400;
+    }
+    button{
+        width:35%;
+        padding:1.2rem;
+        margin-left:0.2rem;
+        border-radius: 50px;
+        font-size:1.1rem;
+        font-weight:100;
+        letter-spacing:0.2px;
+    }
+    button:hover{
+        color:rgb(171, 21, 126);
+    }
+    footer{
+        position: absolute;
+        bottom: 2rem;
+        right: 4rem;
+    }
+}
